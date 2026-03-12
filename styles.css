@@ -20,12 +20,12 @@ header {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     overflow: hidden;
 }
 
-header img {
+.background-image {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -36,17 +36,78 @@ header img {
     display: block;
 }
 
-header h1,
-header nav {
+.profile-image {
+    width: 87.27px;
+    height: 87.27px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin-top: 80px;
+    margin-bottom: 56px;
+}
+header h2 {
+    font-size: 20px;
+    color: #C0C4CE;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 8px;
+    line-height: 120%;
+    font-weight: 400;;
+}
+
+.nome-destaque {
+    color: #E3646E;
+    font-weight: 400;
+}
+
+h1 {
     position: relative;
     z-index: 1;
     color: white;
+    font-size: 56px;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 12px;
+p {
+    position: relative;
+    z-index: 1;
+    color: #C0C4CE;
+    font-size: 16px;
+    width: 540px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    color: #878EA1;
 }
 
+header nav {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+header nav img {
+    display: block;
+}
+
+.skill-item span {
+    color: #C0C4CE;
+    font-size: 14px;
+}
+.scroll {
+    position: absolute;
+    bottom: 94px;
+    z-index: 1;
+    width: 32px;
+    height: 32px;
+}
   
