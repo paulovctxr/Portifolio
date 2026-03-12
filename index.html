@@ -1,112 +1,160 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Paulo Victor, desenvolvedor fullstack com foco em soluções web modernas.">
+  <title>Paulo Victor | Portfólio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img class="background-image" src="assets/Background_Intro.png" alt="imagem de fundo">
-        <img class="profile-image" src="assets/629216086_1598238681502017_36604897656728836_n.jpg" alt="imagem de perfil">
-        <h2>Hello World! Meu nome é <span class="nome-destaque">Paulo Victor</span> e sou</h2>
-        <h1>Desenvolvedor Fullstack</h1>
-        <p>Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas através da minha paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para desafios complexos.</p>
-        <nav>
-          <div class="skill-item">
-            <img src="assets/GitHub.svg" alt="GitHub">
-            <span>GitHub</span>
-          </div>
-          <div class="skill-item">
-            <img src="assets/HTML.svg" alt="HTML">
-            <span>HTML</span>
-          </div>
-          <div class="skill-item">
-            <img src="assets/JavaScript.svg" alt="JavaScript">
-            <span>JavaScript</span>
-          </div>
-          <div class="skill-item">
-            <img src="assets/Node.js.svg" alt="Node.js">
-            <span>Node.js</span>
-          </div>
-          <div class="skill-item">
-            <img src="assets/React.svg" alt="React">
-            <span>React</span>
-          </div>
-        </nav>
-        <img src="assets/CaretDoubleDown.png" alt="Seta para baixo" class="scroll">
-    </header>
-    <div class="work-section">
-      <h3>Meu Trabalho</h3>
-      <h4>Veja os projetos em destaque</h4>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img src="assets/Captura de tela 2026-03-12 170605.png" alt="Projeto 01">
-          <h5 class="project-title">Travelgram</h5>
-          <p class="project-description">Rede social onde as pessoas mostram os registros de suas viagens</p>
-        </div>
-        <div class="project-card">
-          <img src="assets/Thumbnail_Project-02.png" alt="Projeto 02">
-          <h5 class="project-title">Tech News 02</h5>
-          <p class="project-description">Homepage de um portal de notícias sobre a área de tecnologia</p>
-        </div>
-        <div class="project-card">
-          <img src="assets/Thumbnail_Project-03.png" alt="Projeto 03">
-          <h5 class="project-title">Página de receita</h5>
-          <p class="project-description">Página com o passo a passo de uma receita para cupcakes</p>
-        </div>
-        <div class="project-card">
-          <img src="assets/Thumbnail_Project-04.png" alt="Projeto 04">
-          <h5 class="project-title">Zingen</h5>
-          <p class="project-description">Landing Page completa e responsiva de um aplicativo de Karaokê</p>
-        </div>
-        <div class="project-card">
-          <img src="assets/Thumbnail_Project-05.png" alt="Projeto 05">
-          <h5 class="project-title">Refund</h5>
-          <p class="project-description">Um sistema para pedido e acompanhamento de reembolso </p>
-        </div>
-        <div class="project-card">
-          <img src="assets/Thumbnail_Project-06.png" alt="Projeto 06">
-          <h5 class="project-title">Página de turismo</h5>
-          <p class="project-description">Página com as principais informações para quem quer viajar para Busan</p>
-        </div>
-      </div>
+  <header class="hero" id="inicio">
+    <img class="background-image" src="assets/Background_Intro.png" alt="Fundo decorativo">
+    <div class="overlay"></div>
+
+    <nav class="top-nav" aria-label="Navegação principal">
+      <a href="#projetos">Projetos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="hero-content">
+      <img class="profile-image" src="assets/629216086_1598238681502017_36604897656728836_n.jpg" alt="Foto de Paulo Victor">
+      <p class="intro">Hello World! Meu nome é <span class="nome-destaque">Paulo Victor</span> e sou</p>
+      <h1>Desenvolvedor Fullstack</h1>
+      <p class="hero-description">
+        Transformo ideias em produtos digitais com foco em performance, usabilidade e resultado. Crio interfaces e sistemas web completos para ajudar negócios a crescer com tecnologia.
+      </p>
+
+      <ul class="skills-list" aria-label="Tecnologias principais">
+        <li class="skill-item">
+          <img src="assets/GitHub.svg" alt="Ícone GitHub">
+          <span>GitHub</span>
+        </li>
+        <li class="skill-item">
+          <img src="assets/HTML.svg" alt="Ícone HTML">
+          <span>HTML</span>
+        </li>
+        <li class="skill-item">
+          <img src="assets/JavaScript.svg" alt="Ícone JavaScript">
+          <span>JavaScript</span>
+        </li>
+        <li class="skill-item">
+          <img src="assets/Node.js.svg" alt="Ícone Node.js">
+          <span>Node.js</span>
+        </li>
+        <li class="skill-item">
+          <img src="assets/React.svg" alt="Ícone React">
+          <span>React</span>
+        </li>
+      </ul>
     </div>
-    <section class="services-section">
-      <h3>Meus serviços</h3>
-      <h4>Como posso ajudar o seu negócio</h4>
-      <div class="services-cards">
-        <img src="assets/Card.png" alt="Serviços">
-        <img src="assets/Card 2.png" alt="Serviços">
-        <img src="assets/Card 3.png" alt="Serviços">
+
+    <a href="#projetos" class="scroll-link" aria-label="Ir para seção de projetos">
+      <img src="assets/CaretDoubleDown.png" alt="Seta para baixo" class="scroll">
+    </a>
+  </header>
+
+  <main>
+    <section class="work-section" id="projetos">
+      <p class="section-kicker">Meu Trabalho</p>
+      <h2>Projetos que resolvem problemas reais</h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="assets/Captura de tela 2026-03-12 170605.png" alt="Preview do projeto Travelgram">
+          <h3 class="project-title">Travelgram</h3>
+          <p class="project-description">Rede social onde as pessoas mostram os registros de suas viagens.</p>
+          <div class="project-actions">
+            <a class="project-button" href="https://github.com/paulovctxr/Travelgram" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/Thumbnail_Project-02.png" alt="Preview do projeto Tech News">
+          <h3 class="project-title">Tech News</h3>
+          <p class="project-description">Homepage de um portal de notícias sobre a área de tecnologia.</p>
+          <div class="project-actions">
+            <a class="project-button" href="https://github.com/paulovctxr?tab=repositories&q=tech+news&type=&language=&sort=" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/Thumbnail_Project-03.png" alt="Preview da página de receita">
+          <h3 class="project-title">Página de receita</h3>
+          <p class="project-description">Página com o passo a passo de uma receita para cupcakes.</p>
+          <div class="project-actions">
+            <a class="project-button" href="https://github.com/paulovctxr/Pagina-de-receita" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/Thumbnail_Project-04.png" alt="Preview do projeto Zingen">
+          <h3 class="project-title">Zingen</h3>
+          <p class="project-description">Landing page completa e responsiva de um aplicativo de karaokê.</p>
+          <div class="project-actions">
+            <a class="project-button" href="https://github.com/paulovctxr?tab=repositories&q=zingen&type=&language=&sort=" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/Thumbnail_Project-05.png" alt="Preview do projeto Refund">
+          <h3 class="project-title">Refund</h3>
+          <p class="project-description">Sistema para pedido e acompanhamento de reembolso.</p>
+          <div class="project-actions">
+            <a class="project-button" href="https://github.com/paulovctxr?tab=repositories&q=refund&type=&language=&sort=" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/Thumbnail_Project-06.png" alt="Preview da página de turismo">
+          <h3 class="project-title">Página de turismo</h3>
+          <p class="project-description">Página com informações para quem quer viajar para Busan.</p>
+          <div class="project-actions">
+            <a class="project-button" href="https://github.com/paulovctxr/Local-Turistico" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+          </div>
+        </article>
       </div>
     </section>
-    <section class="contacts-section">
-      <h3>Contato</h3>
-      <h4>Gostou do meu trabalho?</h4>
-      <p>Entre em contato ou acompanhe as minhas redes sociais!</p>
+
+    <section class="services-section" id="servicos">
+      <p class="section-kicker">Meus serviços</p>
+      <h2>Soluções sob medida para o seu negócio</h2>
+
+      <div class="services-cards" aria-label="Serviços oferecidos">
+        <img src="assets/Card.png" alt="Websites e landing pages">
+        <img src="assets/Card 2.png" alt="APIs e back-end">
+        <img src="assets/Card 3.png" alt="Integrações e melhorias">
+      </div>
+    </section>
+
+    <section class="contacts-section" id="contato">
+      <p class="section-kicker">Contato</p>
+      <h2>Gostou do meu trabalho?</h2>
+      <p>Vamos conversar sobre o seu projeto. Estou disponível para novos desafios e oportunidades.</p>
+
       <div class="social-links">
-        <a class="social-button" href="https://github.com/paulovctxr" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <a class="social-button" href="https://github.com/paulovctxr" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Paulo Victor">
           <img src="assets/github-logo.svg" alt="GitHub">
-          <span>paulovctxr</span>
+          <span>github.com/paulovctxr</span>
         </a>
-        <a class="social-button" href="mailto:victorpaulognv@gmail.com" aria-label="Email">
+        <a class="social-button" href="mailto:victorpaulognv@gmail.com" aria-label="Enviar e-mail para Paulo Victor">
           <img src="assets/envelope-simple.svg" alt="Email">
           <span>victorpaulognv@gmail.com</span>
         </a>
-        <a class="social-button" href="https://www.linkedin.com/in/paulovictorso-dev" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <a class="social-button" href="https://www.linkedin.com/in/paulovictorso-dev" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Paulo Victor">
           <img src="assets/linkedin-logo.svg" alt="LinkedIn">
           <span>in/paulovictorso-dev</span>
         </a>
-        <a class="social-button" href="https://instagram.com/paulovctxr" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <a class="social-button" href="https://instagram.com/paulovctxr" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Paulo Victor">
           <img src="assets/instagram-logo.svg" alt="Instagram">
           <span>@paulovctxr</span>
         </a>
       </div>
     </section>
+  </main>
 </body>
 </html>

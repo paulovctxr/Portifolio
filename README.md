@@ -1,39 +1,50 @@
-# Portfólio - Paulo Victor
+# Olá, eu sou Paulo Victor 👋
 
-Este projeto é um portfólio pessoal desenvolvido com **HTML** e **CSS**.
+Desenvolvedor Fullstack apaixonado por tecnologia e por transformar necessidades em aplicações reais, evolutivas e funcionais.
 
-## Estrutura
+![Profile Views](https://komarev.com/ghpvc/?username=paulovctxr&label=Profile%20views&color=0e75b6&style=flat)
 
-- `index.html`: arquivo principal da página
-- `styles.css`: estilos visuais do portfólio
-- `assets/`: imagens, ícones e elementos gráficos
+## 🚀 Sobre mim
 
-## Como visualizar
+- 💻 Foco em desenvolvimento web fullstack
+- 🧠 Soluções práticas para desafios complexos
+- 📚 Evolução contínua em tecnologias modernas
 
-### Opção 1 (mais simples)
-1. Abra a pasta do projeto no VS Code.
-2. Clique duas vezes no arquivo `index.html`.
-3. Abra o arquivo no navegador (Chrome, Edge ou Firefox).
+## 🛠️ Stack
 
-### Opção 2 (com Live Server no VS Code)
-1. Instale a extensão **Live Server** no VS Code.
-2. Clique com o botão direito em `index.html`.
-3. Selecione **Open with Live Server**.
-4. O navegador abrirá automaticamente e atualizará sozinho quando você salvar alterações.
+![HTML5](https://img.shields.io/badge/HTML5-0D1117?style=for-the-badge&logo=html5&logoColor=E34F26)
+![JavaScript](https://img.shields.io/badge/JavaScript-0D1117?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![Node.js](https://img.shields.io/badge/Node.js-0D1117?style=for-the-badge&logo=node.js&logoColor=339933)
+![React](https://img.shields.io/badge/React-0D1117?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Git](https://img.shields.io/badge/Git-0D1117?style=for-the-badge&logo=git&logoColor=F05032)
+![GitHub](https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=FFFFFF)
 
-## Como rodar localmente (sem extensões)
+## 📊 GitHub Stats
 
-Você também pode apenas abrir o arquivo diretamente:
-- Caminho: `Portifólio/index.html`
-- Não precisa instalar dependências nem rodar comandos.
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=paulovctxr&show_icons=true&theme=tokyonight&hide_border=true&locale=pt-br)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=paulovctxr&layout=compact&theme=tokyonight&hide_border=true&locale=pt-br)
+![GitHub Streak](https://streak-stats.demolab.com?user=paulovctxr&theme=tokyonight&hide_border=true&locale=pt_BR)
 
-## Personalização rápida
+## 🏆 Troféus
 
-- Troque textos em `index.html` (nome, bio, projetos e contatos).
-- Ajuste cores, espaçamentos e fontes em `styles.css`.
-- Substitua imagens na pasta `assets/` mantendo os mesmos nomes (ou atualize os caminhos no HTML).
+![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=paulovctxr&theme=tokyonight&no-frame=true&row=1&column=7)
 
-## Observações
+## 📌 Projetos em destaque
 
-- Projeto estático (front-end), sem back-end.
-- Funciona em qualquer navegador moderno.
+- Travelgram — Rede social para compartilhar registros de viagens
+- Tech News — Homepage de portal de notícias de tecnologia
+- Página de Receita — Passo a passo de receita para cupcakes
+- Zingen — Landing page responsiva para app de karaokê
+- Refund — Sistema para pedido e acompanhamento de reembolso
+- Página de Turismo — Informações para quem quer viajar para Busan
+
+## 🌐 Contato
+
+- GitHub: https://github.com/paulovctxr
+- LinkedIn: https://www.linkedin.com/in/paulovictorso-dev
+- Instagram: https://instagram.com/paulovctxr
+- E-mail: victorpaulognv@gmail.com
+
+---
+
+✨ Obrigado por visitar meu perfil!
