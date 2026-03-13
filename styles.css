@@ -72,6 +72,7 @@ img {
     width: min(100%, var(--container));
     margin: 0 auto;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
     gap: 22px;
     padding-top: 4px;
@@ -86,6 +87,26 @@ img {
 
 .top-nav a:hover {
     color: var(--text-primary);
+}
+
+.language-toggle {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    color: var(--text-secondary);
+    font-family: inherit;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    border-radius: 999px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.language-toggle:hover {
+    color: var(--text-primary);
+    border-color: rgba(227, 100, 110, 0.75);
+    background-color: rgba(227, 100, 110, 0.15);
 }
 
 .hero-content {
@@ -349,6 +370,7 @@ main {
     .top-nav {
         justify-content: center;
         gap: 16px;
+        flex-wrap: wrap;
     }
 
     .intro {

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfólio de Paulo Victor, desenvolvedor fullstack com foco em soluções web modernas.">
-  <title>Paulo Victor | Portfólio</title>
+  <meta name="description" content="Portfolio of Paulo Victor, a fullstack developer focused on modern web solutions.">
+  <title>Paulo Victor | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -12,149 +12,302 @@
 </head>
 <body>
   <header class="hero" id="inicio">
-    <img class="background-image" src="assets/Background_Intro.png" alt="Fundo decorativo">
+    <img class="background-image" src="assets/Background_Intro.png" alt="Decorative background" data-i18n-attr="alt" data-i18n-key="hero.backgroundAlt">
     <div class="overlay"></div>
 
-    <nav class="top-nav" aria-label="Navegação principal">
-      <a href="#projetos">Projetos</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#contato">Contato</a>
+    <nav class="top-nav" aria-label="Main navigation" data-i18n-attr="aria-label" data-i18n-key="nav.aria">
+      <a href="#projects" data-i18n="nav.projects">Projects</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <button class="language-toggle" id="language-toggle" type="button" data-i18n-attr="aria-label" data-i18n-key="nav.languageAria">Translate to Portuguese</button>
     </nav>
 
     <div class="hero-content">
-      <img class="profile-image" src="assets/629216086_1598238681502017_36604897656728836_n.jpg" alt="Foto de Paulo Victor">
-      <p class="intro">Hello World! Meu nome é <span class="nome-destaque">Paulo Victor</span> e sou</p>
-      <h1>Desenvolvedor Fullstack</h1>
-      <p class="hero-description">
-        Transformo ideias em produtos digitais com foco em performance, usabilidade e resultado. Crio interfaces e sistemas web completos para ajudar negócios a crescer com tecnologia.
+      <img class="profile-image" src="assets/629216086_1598238681502017_36604897656728836_n.jpg" alt="Photo of Paulo Victor" data-i18n-attr="alt" data-i18n-key="hero.profileAlt">
+      <p class="intro"><span data-i18n="hero.greeting">Hello World! My name is</span> <span class="nome-destaque">Paulo Victor</span> <span data-i18n="hero.connector">and I am</span></p>
+      <h1 data-i18n="hero.title">Fullstack Developer</h1>
+      <p class="hero-description" data-i18n="hero.description">
+        I turn ideas into digital products focused on performance, usability, and results. I build complete web interfaces and systems to help businesses grow with technology.
       </p>
 
-      <ul class="skills-list" aria-label="Tecnologias principais">
+      <ul class="skills-list" aria-label="Main technologies" data-i18n-attr="aria-label" data-i18n-key="hero.skillsAria">
         <li class="skill-item">
-          <img src="assets/GitHub.svg" alt="Ícone GitHub">
+          <img src="assets/GitHub.svg" alt="GitHub icon" data-i18n-attr="alt" data-i18n-key="skills.githubAlt">
           <span>GitHub</span>
         </li>
         <li class="skill-item">
-          <img src="assets/HTML.svg" alt="Ícone HTML">
+          <img src="assets/HTML.svg" alt="HTML icon" data-i18n-attr="alt" data-i18n-key="skills.htmlAlt">
           <span>HTML</span>
         </li>
         <li class="skill-item">
-          <img src="assets/JavaScript.svg" alt="Ícone JavaScript">
+          <img src="assets/JavaScript.svg" alt="JavaScript icon" data-i18n-attr="alt" data-i18n-key="skills.javascriptAlt">
           <span>JavaScript</span>
         </li>
         <li class="skill-item">
-          <img src="assets/Node.js.svg" alt="Ícone Node.js">
+          <img src="assets/Node.js.svg" alt="Node.js icon" data-i18n-attr="alt" data-i18n-key="skills.nodeAlt">
           <span>Node.js</span>
         </li>
         <li class="skill-item">
-          <img src="assets/React.svg" alt="Ícone React">
+          <img src="assets/React.svg" alt="React icon" data-i18n-attr="alt" data-i18n-key="skills.reactAlt">
           <span>React</span>
         </li>
       </ul>
     </div>
 
-    <a href="#projetos" class="scroll-link" aria-label="Ir para seção de projetos">
-      <img src="assets/CaretDoubleDown.png" alt="Seta para baixo" class="scroll">
+    <a href="#projects" class="scroll-link" aria-label="Go to projects section" data-i18n-attr="aria-label" data-i18n-key="hero.scrollAria">
+      <img src="assets/CaretDoubleDown.png" alt="Down arrow" class="scroll" data-i18n-attr="alt" data-i18n-key="hero.scrollAlt">
     </a>
   </header>
 
   <main>
-    <section class="work-section" id="projetos">
-      <p class="section-kicker">Meu Trabalho</p>
-      <h2>Projetos que resolvem problemas reais</h2>
+    <section class="work-section" id="projects">
+      <p class="section-kicker" data-i18n="projects.kicker">My Work</p>
+      <h2 data-i18n="projects.title">Projects that solve real problems</h2>
 
       <div class="projects-grid">
         <article class="project-card">
-          <img src="assets/Captura de tela 2026-03-12 170605.png" alt="Preview do projeto Travelgram">
+          <img src="assets/Captura de tela 2026-03-12 170605.png" alt="Travelgram project preview" data-i18n-attr="alt" data-i18n-key="projects.travelgramAlt">
           <h3 class="project-title">Travelgram</h3>
-          <p class="project-description">Rede social onde as pessoas mostram os registros de suas viagens.</p>
+          <p class="project-description" data-i18n="projects.travelgramDesc">A social network where people share records of their trips.</p>
           <div class="project-actions">
-            <a class="project-button" href="https://github.com/paulovctxr/Travelgram" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+            <a class="project-button" href="https://github.com/paulovctxr/Travelgram" target="_blank" rel="noopener noreferrer" data-i18n="projects.viewButton">View project</a>
           </div>
         </article>
 
         <article class="project-card">
-          <img src="assets/Thumbnail_Project-02.png" alt="Preview do projeto Tech News">
+          <img src="assets/Thumbnail_Project-02.png" alt="Tech News project preview" data-i18n-attr="alt" data-i18n-key="projects.techNewsAlt">
           <h3 class="project-title">Tech News</h3>
-          <p class="project-description">Homepage de um portal de notícias sobre a área de tecnologia.</p>
+          <p class="project-description" data-i18n="projects.techNewsDesc">Homepage for a technology news portal.</p>
           <div class="project-actions">
-            <a class="project-button" href="https://github.com/paulovctxr?tab=repositories&q=tech+news&type=&language=&sort=" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+            <a class="project-button" href="https://github.com/paulovctxr?tab=repositories&q=tech+news&type=&language=&sort=" target="_blank" rel="noopener noreferrer" data-i18n="projects.viewButton">View project</a>
           </div>
         </article>
 
         <article class="project-card">
-          <img src="assets/Thumbnail_Project-03.png" alt="Preview da página de receita">
-          <h3 class="project-title">Página de receita</h3>
-          <p class="project-description">Página com o passo a passo de uma receita para cupcakes.</p>
+          <img src="assets/Thumbnail_Project-03.png" alt="Recipe page preview" data-i18n-attr="alt" data-i18n-key="projects.recipeAlt">
+          <h3 class="project-title" data-i18n="projects.recipeTitle">Recipe Page</h3>
+          <p class="project-description" data-i18n="projects.recipeDesc">A page with the step-by-step process for a cupcake recipe.</p>
           <div class="project-actions">
-            <a class="project-button" href="https://github.com/paulovctxr/Pagina-de-receita" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+            <a class="project-button" href="https://github.com/paulovctxr/Pagina-de-receita" target="_blank" rel="noopener noreferrer" data-i18n="projects.viewButton">View project</a>
           </div>
         </article>
 
         <article class="project-card">
-          <img src="assets/Thumbnail_Project-04.png" alt="Preview do projeto Zingen">
+          <img src="assets/Thumbnail_Project-04.png" alt="Zingen project preview" data-i18n-attr="alt" data-i18n-key="projects.zingenAlt">
           <h3 class="project-title">Zingen</h3>
-          <p class="project-description">Landing page completa e responsiva de um aplicativo de karaokê.</p>
+          <p class="project-description" data-i18n="projects.zingenDesc">A complete and responsive landing page for a karaoke app.</p>
           <div class="project-actions">
-            <a class="project-button" href="https://github.com/paulovctxr?tab=repositories&q=zingen&type=&language=&sort=" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+            <a class="project-button" href="https://github.com/paulovctxr?tab=repositories&q=zingen&type=&language=&sort=" target="_blank" rel="noopener noreferrer" data-i18n="projects.viewButton">View project</a>
           </div>
         </article>
 
         <article class="project-card">
-          <img src="assets/Thumbnail_Project-05.png" alt="Preview do projeto Refund">
+          <img src="assets/Thumbnail_Project-05.png" alt="Refund project preview" data-i18n-attr="alt" data-i18n-key="projects.refundAlt">
           <h3 class="project-title">Refund</h3>
-          <p class="project-description">Sistema para pedido e acompanhamento de reembolso.</p>
+          <p class="project-description" data-i18n="projects.refundDesc">A system for requesting and tracking reimbursements.</p>
           <div class="project-actions">
-            <a class="project-button" href="https://github.com/paulovctxr?tab=repositories&q=refund&type=&language=&sort=" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+            <a class="project-button" href="https://github.com/paulovctxr?tab=repositories&q=refund&type=&language=&sort=" target="_blank" rel="noopener noreferrer" data-i18n="projects.viewButton">View project</a>
           </div>
         </article>
 
         <article class="project-card">
-          <img src="assets/Thumbnail_Project-06.png" alt="Preview da página de turismo">
-          <h3 class="project-title">Página de turismo</h3>
-          <p class="project-description">Página com informações para quem quer viajar para Busan.</p>
+          <img src="assets/Thumbnail_Project-06.png" alt="Tourism page preview" data-i18n-attr="alt" data-i18n-key="projects.tourismAlt">
+          <h3 class="project-title" data-i18n="projects.tourismTitle">Tourism Page</h3>
+          <p class="project-description" data-i18n="projects.tourismDesc">A page with information for people who want to travel to Busan.</p>
           <div class="project-actions">
-            <a class="project-button" href="https://github.com/paulovctxr/Local-Turistico" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+            <a class="project-button" href="https://github.com/paulovctxr/Local-Turistico" target="_blank" rel="noopener noreferrer" data-i18n="projects.viewButton">View project</a>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="services-section" id="servicos">
-      <p class="section-kicker">Meus serviços</p>
-      <h2>Soluções sob medida para o seu negócio</h2>
+    <section class="services-section" id="services">
+      <p class="section-kicker" data-i18n="services.kicker">My Services</p>
+      <h2 data-i18n="services.title">Tailored solutions for your business</h2>
 
-      <div class="services-cards" aria-label="Serviços oferecidos">
-        <img src="assets/Card.png" alt="Websites e landing pages">
-        <img src="assets/Card 2.png" alt="APIs e back-end">
-        <img src="assets/Card 3.png" alt="Integrações e melhorias">
+      <div class="services-cards" aria-label="Offered services" data-i18n-attr="aria-label" data-i18n-key="services.aria">
+        <img src="assets/Card.png" alt="Websites and landing pages" data-i18n-attr="alt" data-i18n-key="services.card1Alt">
+        <img src="assets/Card 2.png" alt="APIs and back-end" data-i18n-attr="alt" data-i18n-key="services.card2Alt">
+        <img src="assets/Card 3.png" alt="Integrations and improvements" data-i18n-attr="alt" data-i18n-key="services.card3Alt">
       </div>
     </section>
 
-    <section class="contacts-section" id="contato">
-      <p class="section-kicker">Contato</p>
-      <h2>Gostou do meu trabalho?</h2>
-      <p>Vamos conversar sobre o seu projeto. Estou disponível para novos desafios e oportunidades.</p>
+    <section class="contacts-section" id="contact">
+      <p class="section-kicker" data-i18n="contact.kicker">Contact</p>
+      <h2 data-i18n="contact.title">Did you like my work?</h2>
+      <p data-i18n="contact.description">Let's talk about your project. I am available for new challenges and opportunities.</p>
 
       <div class="social-links">
-        <a class="social-button" href="https://github.com/paulovctxr" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Paulo Victor">
+        <a class="social-button" href="https://github.com/paulovctxr" target="_blank" rel="noopener noreferrer" aria-label="Paulo Victor's GitHub" data-i18n-attr="aria-label" data-i18n-key="contact.githubAria">
           <img src="assets/github-logo.svg" alt="GitHub">
           <span>github.com/paulovctxr</span>
         </a>
-        <a class="social-button" href="mailto:victorpaulognv@gmail.com" aria-label="Enviar e-mail para Paulo Victor">
+        <a class="social-button" href="mailto:victorpaulognv@gmail.com" aria-label="Send an email to Paulo Victor" data-i18n-attr="aria-label" data-i18n-key="contact.emailAria">
           <img src="assets/envelope-simple.svg" alt="Email">
           <span>victorpaulognv@gmail.com</span>
         </a>
-        <a class="social-button" href="https://www.linkedin.com/in/paulovictorso-dev" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Paulo Victor">
+        <a class="social-button" href="https://www.linkedin.com/in/paulovictorso-dev" target="_blank" rel="noopener noreferrer" aria-label="Paulo Victor's LinkedIn" data-i18n-attr="aria-label" data-i18n-key="contact.linkedinAria">
           <img src="assets/linkedin-logo.svg" alt="LinkedIn">
           <span>in/paulovictorso-dev</span>
         </a>
-        <a class="social-button" href="https://instagram.com/paulovctxr" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Paulo Victor">
+        <a class="social-button" href="https://instagram.com/paulovctxr" target="_blank" rel="noopener noreferrer" aria-label="Paulo Victor's Instagram" data-i18n-attr="aria-label" data-i18n-key="contact.instagramAria">
           <img src="assets/instagram-logo.svg" alt="Instagram">
           <span>@paulovctxr</span>
         </a>
       </div>
     </section>
   </main>
+
+  <script>
+    const translations = {
+      en: {
+        pageTitle: 'Paulo Victor | Portfolio',
+        pageDescription: 'Portfolio of Paulo Victor, a fullstack developer focused on modern web solutions.',
+        'nav.aria': 'Main navigation',
+        'nav.projects': 'Projects',
+        'nav.services': 'Services',
+        'nav.contact': 'Contact',
+        'nav.languageAria': 'Translate to Portuguese',
+        'hero.backgroundAlt': 'Decorative background',
+        'hero.profileAlt': 'Photo of Paulo Victor',
+        'hero.greeting': 'Hello World! My name is',
+        'hero.connector': 'and I am',
+        'hero.title': 'Fullstack Developer',
+        'hero.description': 'I turn ideas into digital products focused on performance, usability, and results. I build complete web interfaces and systems to help businesses grow with technology.',
+        'hero.skillsAria': 'Main technologies',
+        'hero.scrollAria': 'Go to projects section',
+        'hero.scrollAlt': 'Down arrow',
+        'skills.githubAlt': 'GitHub icon',
+        'skills.htmlAlt': 'HTML icon',
+        'skills.javascriptAlt': 'JavaScript icon',
+        'skills.nodeAlt': 'Node.js icon',
+        'skills.reactAlt': 'React icon',
+        'projects.kicker': 'My Work',
+        'projects.title': 'Projects that solve real problems',
+        'projects.travelgramAlt': 'Travelgram project preview',
+        'projects.travelgramDesc': 'A social network where people share records of their trips.',
+        'projects.viewButton': 'View project',
+        'projects.techNewsAlt': 'Tech News project preview',
+        'projects.techNewsDesc': 'Homepage for a technology news portal.',
+        'projects.recipeAlt': 'Recipe page preview',
+        'projects.recipeTitle': 'Recipe Page',
+        'projects.recipeDesc': 'A page with the step-by-step process for a cupcake recipe.',
+        'projects.zingenAlt': 'Zingen project preview',
+        'projects.zingenDesc': 'A complete and responsive landing page for a karaoke app.',
+        'projects.refundAlt': 'Refund project preview',
+        'projects.refundDesc': 'A system for requesting and tracking reimbursements.',
+        'projects.tourismAlt': 'Tourism page preview',
+        'projects.tourismTitle': 'Tourism Page',
+        'projects.tourismDesc': 'A page with information for people who want to travel to Busan.',
+        'services.kicker': 'My Services',
+        'services.title': 'Tailored solutions for your business',
+        'services.aria': 'Offered services',
+        'services.card1Alt': 'Websites and landing pages',
+        'services.card2Alt': 'APIs and back-end',
+        'services.card3Alt': 'Integrations and improvements',
+        'contact.kicker': 'Contact',
+        'contact.title': 'Did you like my work?',
+        'contact.description': "Let's talk about your project. I am available for new challenges and opportunities.",
+        'contact.githubAria': "Paulo Victor's GitHub",
+        'contact.emailAria': 'Send an email to Paulo Victor',
+        'contact.linkedinAria': "Paulo Victor's LinkedIn",
+        'contact.instagramAria': "Paulo Victor's Instagram"
+      },
+      pt: {
+        pageTitle: 'Paulo Victor | Portfólio',
+        pageDescription: 'Portfólio de Paulo Victor, desenvolvedor fullstack com foco em soluções web modernas.',
+        'nav.aria': 'Navegação principal',
+        'nav.projects': 'Projetos',
+        'nav.services': 'Serviços',
+        'nav.contact': 'Contato',
+        'nav.languageAria': 'Translate to English',
+        'hero.backgroundAlt': 'Fundo decorativo',
+        'hero.profileAlt': 'Foto de Paulo Victor',
+        'hero.greeting': 'Hello World! Meu nome é',
+        'hero.connector': 'e sou',
+        'hero.title': 'Desenvolvedor Fullstack',
+        'hero.description': 'Transformo ideias em produtos digitais com foco em performance, usabilidade e resultado. Crio interfaces e sistemas web completos para ajudar negócios a crescer com tecnologia.',
+        'hero.skillsAria': 'Tecnologias principais',
+        'hero.scrollAria': 'Ir para seção de projetos',
+        'hero.scrollAlt': 'Seta para baixo',
+        'skills.githubAlt': 'Ícone GitHub',
+        'skills.htmlAlt': 'Ícone HTML',
+        'skills.javascriptAlt': 'Ícone JavaScript',
+        'skills.nodeAlt': 'Ícone Node.js',
+        'skills.reactAlt': 'Ícone React',
+        'projects.kicker': 'Meu Trabalho',
+        'projects.title': 'Projetos que resolvem problemas reais',
+        'projects.travelgramAlt': 'Preview do projeto Travelgram',
+        'projects.travelgramDesc': 'Rede social onde as pessoas mostram os registros de suas viagens.',
+        'projects.viewButton': 'Ver projeto',
+        'projects.techNewsAlt': 'Preview do projeto Tech News',
+        'projects.techNewsDesc': 'Homepage de um portal de notícias sobre a área de tecnologia.',
+        'projects.recipeAlt': 'Preview da página de receita',
+        'projects.recipeTitle': 'Página de receita',
+        'projects.recipeDesc': 'Página com o passo a passo de uma receita para cupcakes.',
+        'projects.zingenAlt': 'Preview do projeto Zingen',
+        'projects.zingenDesc': 'Landing page completa e responsiva de um aplicativo de karaokê.',
+        'projects.refundAlt': 'Preview do projeto Refund',
+        'projects.refundDesc': 'Sistema para pedido e acompanhamento de reembolso.',
+        'projects.tourismAlt': 'Preview da página de turismo',
+        'projects.tourismTitle': 'Página de turismo',
+        'projects.tourismDesc': 'Página com informações para quem quer viajar para Busan.',
+        'services.kicker': 'Meus serviços',
+        'services.title': 'Soluções sob medida para o seu negócio',
+        'services.aria': 'Serviços oferecidos',
+        'services.card1Alt': 'Websites e landing pages',
+        'services.card2Alt': 'APIs e back-end',
+        'services.card3Alt': 'Integrações e melhorias',
+        'contact.kicker': 'Contato',
+        'contact.title': 'Gostou do meu trabalho?',
+        'contact.description': 'Vamos conversar sobre o seu projeto. Estou disponível para novos desafios e oportunidades.',
+        'contact.githubAria': 'GitHub de Paulo Victor',
+        'contact.emailAria': 'Enviar e-mail para Paulo Victor',
+        'contact.linkedinAria': 'LinkedIn de Paulo Victor',
+        'contact.instagramAria': 'Instagram de Paulo Victor'
+      }
+    };
+
+    const button = document.getElementById('language-toggle');
+    let currentLanguage = 'en';
+
+    function applyLanguage(language) {
+      const dictionary = translations[language];
+
+      document.documentElement.lang = language === 'pt' ? 'pt-br' : 'en';
+      document.title = dictionary.pageTitle;
+
+      const metaDescription = document.querySelector('meta[name="description"]');
+      if (metaDescription) {
+        metaDescription.setAttribute('content', dictionary.pageDescription);
+      }
+
+      document.querySelectorAll('[data-i18n]').forEach((element) => {
+        const key = element.getAttribute('data-i18n');
+        if (dictionary[key]) {
+          element.textContent = dictionary[key];
+        }
+      });
+
+      document.querySelectorAll('[data-i18n-attr]').forEach((element) => {
+        const attribute = element.getAttribute('data-i18n-attr');
+        const key = element.getAttribute('data-i18n-key');
+
+        if (attribute && key && dictionary[key]) {
+          element.setAttribute(attribute, dictionary[key]);
+        }
+      });
+
+      button.textContent = language === 'en' ? 'PT' : 'EN';
+      button.setAttribute('aria-label', language === 'en' ? 'Translate to Portuguese' : 'Traduzir para inglês');
+    }
+
+    button.addEventListener('click', () => {
+      currentLanguage = currentLanguage === 'en' ? 'pt' : 'en';
+      applyLanguage(currentLanguage);
+    });
+
+    applyLanguage(currentLanguage);
+  </script>
 </body>
 </html>
