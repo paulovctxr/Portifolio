@@ -167,6 +167,19 @@ h1 {
     background-color: rgba(0, 0, 0, 0.24);
 }
 
+.skill-item img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.skill-item img.no-filter {
+    filter: none;
+    width: 28px;
+    height: 28px;
+}
+
 .skill-item span {
     color: var(--text-secondary);
     font-size: 0.9rem;
